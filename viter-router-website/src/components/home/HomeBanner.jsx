@@ -3,7 +3,7 @@ import React from "react";
 const HomeBanner = () => {
   return (
     <>
-      <section className="banner bg-gray-200 py-5 min-h-[400px] grid place-content-center">
+      <section className="banner bg-gray-200 py-16 grid place-content-center">
         <div className="container">
           <div className="bannerWrapper ">
             <h1 className="font-bold text-5xl text-center text-gray-800 ">

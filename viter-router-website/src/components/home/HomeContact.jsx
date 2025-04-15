@@ -3,12 +3,12 @@ import React from "react";
 const HomeContact = () => {
   return (
     <>
-      <section className="contact py-5 min-h-[800px] bg-blue-700 grid place-content-center">
+      <section className="contact py-16 bg-blue-700 lg:grid lg:place-content-center">
         <div className="container">
           <h2 className="text-4xl font-bold text-white text-center mb-7">
             Contact Us
           </h2>
-          <form className="bg-white flex flex-col p-7 rounded-xl">
+          <form className="bg-white flex flex-col p-7 rounded-xl ">
             <label>Name</label>
             <input type="text" />
             <label>Email</label>

@@ -12,12 +12,14 @@ import HomeAbout from "./HomeAbout";
 import { FaGithub } from "react-icons/fa6";
 import HomeServices from "./HomeServices";
 import HomeContact from "./HomeContact";
+import HeaderDesktop from "../header/Header";
 
 const Home = () => {
   return (
     <>
       {/* header */}
       <Header />
+
       {/* banner */}
       <HomeBanner />
       {/* about us */}
@@ -27,25 +29,28 @@ const Home = () => {
       {/* contact */}
       <HomeContact />
       {/* footer */}
-      <footer className="footer">
+      <footer className="footer bg-gray-800 text-gray-500 py-10">
         <div className="container">
-          <ul className="footerSocial">
+          <ul className="footerSocial flex items-center justify-center gap-4">
             <li>
               <a href="">
-                <FaGithub />
+                <FaGithub size={30} />
               </a>
             </li>
             <li>
               <a href="">
-                <FaTwitter />
+                <FaTwitter size={30} />
               </a>
             </li>
             <li>
               <a href="">
-                <FaLinkedin />
+                <FaLinkedin size={30} />
               </a>
             </li>
           </ul>
+          <p className="text-lg text-center mt-3">
+            &copy; 2025 MySite. All Right Reserved.
+          </p>
         </div>
       </footer>
     </>
