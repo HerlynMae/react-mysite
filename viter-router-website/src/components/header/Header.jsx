@@ -14,7 +14,7 @@ const Header = () => {
 
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const toggleMobile = () => setMobileOpen(!mobileOpenOpen);
+  const toggleMobile = () => setMobileOpen(!mobileOpen);
   return (
     <>
       {/* desktop */}
@@ -41,7 +41,8 @@ const Header = () => {
                 </a>
               </li>
               <li className="relative">
-                <button
+                <a
+                  href="#"
                   onClick={toggleDesktop}
                   className="text-gray-700 hover:text-blue-600 hover:bg-blue-100 px-2 py-1 rounded-md transition duration-200 flex items-center gap-1"
                 >
@@ -49,7 +50,7 @@ const Header = () => {
                   <span>
                     {desktopOpen ? <FaChevronUp /> : <FaChevronDown />}
                   </span>
-                </button>
+                </a>
                 {desktopOpen && (
                   <div className="absolute top-8 right-0 bg-white shadow-lg rounded-md py-2 px-6 w-52 z-10">
                     <div className="py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-100 px-2  rounded-md transition duration-200 w-fit">
@@ -74,12 +75,16 @@ const Header = () => {
           <div className="flex justify-between items-center ">
             <h3 className="text-2xl text-blue-600 font-bold">MySite</h3>
 
-            <button onClick={toggleMobile} className="text-xl">
+            <a
+              href="#"
+              onClick={toggleMobile}
+              className="text-xl transition duration-200"
+            >
               {mobileOpen ? <FaChevronUp /> : <FaChevronDown />}
-            </button>
+            </a>
           </div>
           {mobileOpen && (
-            <ul className="space-y-4 pt-6">
+            <ul className="space-y-4 pt-6 transition duration-200">
               <li>
                 <a
                   href="#"

@@ -13,6 +13,7 @@ import { FaGithub } from "react-icons/fa6";
 import HomeServices from "./HomeServices";
 import HomeContact from "./HomeContact";
 import HeaderDesktop from "../header/Header";
+import Footer from "../footer/Footer";
 
 const Home = () => {
   return (
@@ -29,30 +30,7 @@ const Home = () => {
       {/* contact */}
       <HomeContact />
       {/* footer */}
-      <footer className="footer bg-gray-800 text-gray-500 py-10">
-        <div className="container">
-          <ul className="footerSocial flex items-center justify-center gap-4">
-            <li>
-              <a href="">
-                <FaGithub size={30} />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <FaTwitter size={30} />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <FaLinkedin size={30} />
-              </a>
-            </li>
-          </ul>
-          <p className="text-lg text-center mt-3">
-            &copy; 2025 MySite. All Right Reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };
